@@ -32,12 +32,8 @@ func main() {
 
 	for {
 		var animal, action string
-		fmt.Println("Choose the animal (cow, bird or snake) or Ctrl+C to exit:")
 		fmt.Print("> ")
-		fmt.Scan(&animal)
-		fmt.Println("Choose the action (eat, move or speak) or Ctrl+C to exit:")
-		fmt.Print("> ")
-		fmt.Scan(&action)
+		fmt.Scanln(&animal, &action)
 
 		animal = strings.TrimSpace(animal)
 		action = strings.TrimSpace(action)
